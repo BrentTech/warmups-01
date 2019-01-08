@@ -1,0 +1,37 @@
+body {
+  display: grid;
+  grid-template-rows: 100px 300px 100px;
+  background-color: aquamarine;
+  font-size: 1.2em;
+}
+
+header {
+  background-color: gainsboro
+}
+
+main {
+  background-color: coral;
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+}
+
+div:nth-of-type(2) {
+  background-color: beige;
+}
+
+footer {
+  background-color: aqua;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    display: grid;
+    grid-template-rows: 100px 700px 100px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+  }
+}
