@@ -1,0 +1,55 @@
+body {
+  font-size: 1.2em;
+  background-color: aquamarine;
+}
+
+header {
+  height: 100px;
+  background-color: gainsboro;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div:nth-of-type(2) {
+  background-color: beige;
+}
+
+footer {
+  height: 100px;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 1.4em;
+  }
+
+  header {
+    width: 90%;
+    max-width: 960px;
+    margin: 0px auto;
+    flex-direction: row;
+  }
+
+  div:nth-of-type(2) {
+    width: 60%;
+  }
+
+  footer {
+    width: 90%;
+    max-width: 960px;
+    height: 100px;
+    margin: 0px auto;
+  }
+}
